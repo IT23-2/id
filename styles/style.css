@@ -356,147 +356,17 @@ body {
     text-decoration: underline;
 }
 
-.footer__social-list {
-    display: flex;
-    gap: 48px;
-    list-style: none;
+.footer__contacts {
     justify-self: end;
-    padding-left: 0;
 }
 
-.footer__social-icon {
-    width: 48px;
-    height: 48px;
+.footer__contacts-address {
+    font-size: 18px;
+    line-height: 1.35;
 }
 
-/* ===== МЕДИАЗАПРОС ДЛЯ 1100px ===== */
-@media (max-width: 1100px) {
-    body {
-        min-width: auto;
-        max-width: 1100px;
-        padding: 0 20px;
-    }
-    
-    .header {
-        padding: 50px 0;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .header__menu {
-        justify-self: center;
-        order: 1;
-    }
-    
-    .header__logo {
-        order: 2;
-        margin: 20px 0;
-    }
-    
-    .header__address {
-        justify-self: center;
-        order: 3;
-        text-align: center;
-    }
-    
-    .header__links-list {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    .cover {
-        padding: 80px 0 40px;
-        min-height: 500px;
-        margin-bottom: 100px;
-    }
-    
-    .cover__title {
-        font-size: 80px;
-        text-align: center;
-        font-weight: 700; /* Добавлено сюда */
-    }
-    
-    .aligned-text_center {
-        margin-left: 0;
-    }
-    
-    .cover__description {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-    
-    .cover__description-text {
-        text-align: center;
-        white-space: normal;
-        word-spacing: normal;
-    }
-    
-    .lots {
-        padding: 0;
-        margin-bottom: 100px;
-    }
-    
-    .lots__heading {
-        margin-left: 0;
-        text-align: center;
-    }
-    
-    .lots__card-list {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .card {
-        min-height: 350px;
-        padding: 30px;
-    }
-    
-    .lots__look-more-link {
-        margin-left: 0;
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .about {
-        padding: 0;
-        margin-bottom: 100px;
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .about__logo {
-        justify-self: center;
-    }
-    
-    .about__title {
-        margin: 0 0 30px 0;
-    }
-    
-    .footer {
-        padding: 80px 0 40px;
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .footer__address,
-    .footer__menu,
-    .footer__social-list {
-        justify-self: center;
-    }
-    
-    .footer__menu-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .footer__social-list {
-        gap: 30px;
-    }
+.footer__contacts-phone {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.35;
 }
