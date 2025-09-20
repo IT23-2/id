@@ -1,3 +1,4 @@
+/* Базовые сбросы стилей */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ body {
     margin: 0 auto;
 }
 
+/* Стили для header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -52,6 +54,7 @@ body {
     list-style: none;
 }
 
+/* Стиль для пустых кружочков 6x6 */
 .link_list:not(.main_link_marker)::before {
     content: "";
     display: inline-block;
@@ -67,11 +70,10 @@ body {
 .header_logo {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    width: 148px;
-    height: 105px;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 148px;
+    height: 105px;
 }
 
 .address {
@@ -90,6 +92,7 @@ body {
     text-decoration: underline;
 }
 
+/* Убираем кружочки для адресных ссылок */
 .address li {
     list-style: none;
 }
@@ -98,6 +101,7 @@ body {
     content: none !important;
 }
 
+/* Стили для cover секции */
 .cover {
     position: relative;
     padding: 165px 50px 50px;
@@ -114,7 +118,10 @@ body {
 
 .overlay {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
@@ -153,35 +160,6 @@ body {
     margin-right: -0.1em;
 }
 
-.word_tebe {
-    position: relative;
-    display: inline-block;
-}
-
-.letter_e {
-    position: relative;
-}
-
-.letter_e_second {
-    position: relative;
-    margin-right: -0.2em;
-}
-
-.letter_n {
-    position: absolute;
-    width: 387px;
-    height: 40px;
-    left: 100%;
-    bottom: -80px;
-    transform: translateX(-50%) rotate(0deg);
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
-    font-weight: bold;
-}
-
 .cover_description {
     position: relative;
     z-index: 2;
@@ -216,6 +194,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Стили для lots секции */
 .lots {
     padding: 0 50px;
     margin-bottom: 182px;
@@ -285,6 +264,7 @@ body {
     text-underline-offset: 5px;
 }
 
+/* Стили для about секции */
 .about {
     padding: 0 50px;
     margin-bottom: 180px;
@@ -313,7 +293,6 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transform: rotate(0deg);
 }
 
 .about_logo_image img {
@@ -336,6 +315,7 @@ body {
     margin-bottom: 25px;
 }
 
+/* Стили для footer */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -352,15 +332,13 @@ body {
     flex-direction: column;
     align-items: center;
     list-style: none;
+    gap: 10px;
 }
 
 .footer_links a {
     font-size: 18px;
     color: #000;
     text-underline-offset: 4px;
-}
-
-.footer_links:first-child a {
     text-decoration: none;
 }
 
@@ -380,4 +358,61 @@ body {
 .images_footer {
     width: 48px;
     height: 48px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1024px) {
+    .header {
+        padding: 60px 30px;
+    }
+    
+    .cover {
+        padding: 120px 30px 30px;
+        min-height: 600px;
+    }
+    
+    .cover_title {
+        font-size: 80px;
+    }
+    
+    .lots, .about {
+        padding: 0 30px;
+    }
+    
+    .container_lots {
+        flex-direction: column;
+    }
+    
+    .footer {
+        padding: 120px 30px 60px;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    
+    .header_logo {
+        position: relative;
+        transform: none;
+        margin: 20px 0;
+    }
+    
+    .cover_title {
+        font-size: 60px;
+    }
+    
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about_logo {
+        margin-top: 0;
+    }
 }
