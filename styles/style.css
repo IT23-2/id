@@ -1,3 +1,68 @@
+/* Подключение шрифтов через @font-face */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrEHJA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrEHJA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCFPrEHJA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCMPrEHJA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCHPrEHJA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* Базовые сбросы стилей */
 * {
     margin: 0;
@@ -7,7 +72,7 @@
 
 /* Общие стили body */
 body {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #000;
     background-color: #fff;
@@ -38,6 +103,7 @@ body {
 
 .header__links-list-item {
     font-size: 18px;
+    line-height: 1.35;
 }
 
 .header__links-list-item:not(.header__links-list-item_no-bullit)::before {
@@ -94,6 +160,7 @@ body {
 
 .address p {
     margin-top: 5px;
+    line-height: 1.35;
 }
 
 /* ===== COVER SECTION ===== */
@@ -137,8 +204,7 @@ body {
 
 .aligned-text_center {
     text-align: center;
-    margin: 0 auto;
-    max-width: 100%;
+    margin-left: 60px;
 }
 
 .aligned-text_right {
@@ -157,9 +223,9 @@ body {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 78px;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: auto;
 }
 
 .cover__description-text {
@@ -180,6 +246,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-family: 'Raleway';
+    font-weight: 400;
 }
 
 .bet-button:hover {
@@ -204,13 +271,12 @@ body {
     gap: 25px;
     list-style: none;
     margin-bottom: 30px;
-    flex-wrap: wrap;
     padding-left: 0;
 }
 
 .lots__card-list-item {
     flex: 1;
-    min-width: 330px;
+    min-width: 0;
 }
 
 .card-link {
@@ -248,6 +314,7 @@ body {
     text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 3px;
+    line-height: 1.2;
 }
 
 .card__text {
@@ -263,8 +330,6 @@ body {
     color: #000;
     text-decoration: underline;
     text-underline-offset: 5px;
-    display: inline-block;
-    margin-top: 10px;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -279,6 +344,7 @@ body {
 .about__logo {
     display: flex;
     justify-content: center;
+    align-items: start;
 }
 
 .about__logo-image {
@@ -375,12 +441,17 @@ body {
     .header {
         padding: 60px 30px;
         grid-template-columns: 1fr auto;
+        gap: 10px;
     }
     
     .header__menu {
         grid-column: 1 / -1;
         justify-self: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .header__links-list {
+        gap: 20px;
     }
     
     .header__logo {
@@ -389,28 +460,30 @@ body {
     
     .header__address {
         justify-self: end;
+        font-size: 16px;
     }
     
     .cover {
-        padding: 100px 30px 30px;
-        min-height: 600px;
+        padding: 80px 30px 30px;
+        min-height: 500px;
         margin-bottom: 120px;
     }
     
     .cover__title {
-        font-size: 80px;
+        font-size: 70px;
         letter-spacing: 0.25em;
     }
     
     .cover__description {
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
     
     .cover__description-text {
         white-space: normal;
         text-align: center;
+        word-spacing: normal;
     }
     
     .lots, .about {
@@ -418,23 +491,30 @@ body {
         margin-bottom: 120px;
     }
     
+    .lots__heading {
+        margin-left: 0;
+        text-align: center;
+    }
+    
     .lots__card-list {
         flex-direction: column;
         gap: 20px;
     }
     
-    .lots__card-list-item {
-        min-width: auto;
+    .card {
+        min-height: 300px;
+        padding: 30px;
     }
     
-    .card {
-        min-height: 350px;
-        padding: 30px;
+    .lots__look-more-link {
+        margin-left: 0;
+        display: block;
+        text-align: center;
     }
     
     .about {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
         text-align: center;
     }
     
@@ -443,13 +523,13 @@ body {
     }
     
     .about__title {
-        margin: 0 0 25px 0;
+        margin: 0 0 20px 0;
     }
     
     .footer {
-        padding: 120px 30px 60px;
+        padding: 80px 30px 40px;
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
         text-align: center;
     }
     
