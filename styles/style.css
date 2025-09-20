@@ -1,10 +1,14 @@
-/* Базовые сбросы стилей */
+/* Сначала подключаем шрифты через @import (альтернативный способ) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Потом базовые сбросы стилей */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Потом общие стили body */
 body {
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 400;
@@ -14,7 +18,7 @@ body {
     margin: 0 auto;
 }
 
-/* Стили для header */
+/* Далее все остальные стили в правильном порядке */
 .header {
     display: flex;
     justify-content: space-between;
