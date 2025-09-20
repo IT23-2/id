@@ -6,7 +6,7 @@
 }
 
 /* Общие стили body */
-.body {
+body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #000;
@@ -250,6 +250,7 @@
     text-decoration: underline;
     text-underline-offset: 3px;
     line-height: 1.2;
+    font-weight: 700;
 }
 
 .card__text {
@@ -302,6 +303,7 @@
 .about__text {
     font-size: 20px;
     line-height: 1.2;
+    font-weight: 400;
 }
 
 .about__text p {
@@ -343,6 +345,7 @@
     color: #000;
     text-underline-offset: 4px;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .footer__menu-link_active {
@@ -411,6 +414,7 @@
     .cover__title {
         font-size: 80px;
         text-align: center;
+        font-weight: 700; /* Добавлено сюда */
     }
     
     .aligned-text_center {
@@ -495,25 +499,4 @@
     .footer__social-list {
         gap: 30px;
     }
-}
-
-/* Дополнительные исправления для точного соответствия */
-.header__links-list-item::before {
-    vertical-align: baseline;
-}
-
-.cover__title {
-    font-weight: 700;
-}
-
-.card__title {
-    font-weight: 700;
-}
-
-.about__text {
-    font-weight: 400;
-}
-
-.footer__menu-link {
-    font-weight: 400;
 }
