@@ -229,7 +229,8 @@ body {
     background-position: center;
 }
 
-.card .overlay {
+.card::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
