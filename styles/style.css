@@ -1,22 +1,4 @@
-/* Базовые сбросы стилей */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Общие стили body */
-body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: #000;
-    background-color: #fff;
-    max-width: 1440px;
-    margin: 0 auto;
-    min-width: 1100px;
-}
-
-/* ===== HEADER ===== */
+/* HEADER */
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -98,11 +80,11 @@ body {
     line-height: 1.35;
 }
 
-/* ===== COVER SECTION ===== */
+/* COVER */
 .cover {
     position: relative;
     padding: 165px 50px 50px;
-    background-image: url('cover.jpg');
+    background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -188,7 +170,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ===== LOTS SECTION ===== */
+/* LOTS */
 .lots {
     padding: 0 50px;
     margin-bottom: 182px;
@@ -231,15 +213,15 @@ body {
 }
 
 .card_type_film {
-    background-image: url('card-lot-01.jpg');
+    background-image: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-    background-image: url('card-lot-02.jpg');
+    background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background-image: url('card-lot-03.jpg');
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .card__title {
@@ -267,7 +249,7 @@ body {
     text-underline-offset: 5px;
 }
 
-/* ===== ABOUT SECTION ===== */
+/* ABOUT */
 .about {
     padding: 0 50px;
     margin-bottom: 180px;
@@ -308,7 +290,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -366,7 +348,7 @@ body {
     height: 48px;
 }
 
-/* ===== МЕДИАЗАПРОС ДЛЯ 1100px ===== */
+/* MEDIA QUERIES */
 @media (max-width: 1100px) {
     body {
         min-width: auto;
