@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Общие стили body */
 body {
     font-family: 'Raleway';
     font-weight: 400;
@@ -407,6 +408,11 @@ body {
         justify-content: center;
     }
     
+    .cover__description-text {
+        white-space: normal;
+        text-align: center;
+    }
+    
     .lots, .about {
         padding: 0 30px;
         margin-bottom: 120px;
@@ -455,5 +461,11 @@ body {
     
     .footer__social-list {
         gap: 24px;
+    }
+    
+    .footer__menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
