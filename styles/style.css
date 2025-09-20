@@ -5,9 +5,8 @@
     box-sizing: border-box;
 }
 
-/* Общие стили body */
 body {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Raleway';
     font-weight: 400;
     color: #000;
     background-color: #fff;
@@ -176,7 +175,7 @@ body {
     font-size: 22px;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: inherit;
+    font-family: 'Raleway';
 }
 
 .bet-button:hover {
@@ -354,7 +353,7 @@ body {
     height: 48px;
 }
 
-/* ===== MEDIA QUERIES ===== */
+/* ===== МЕДИАЗАПРОС ДЛЯ 1100px ===== */
 @media (max-width: 1100px) {
     body {
         min-width: auto;
@@ -369,6 +368,7 @@ body {
     .header__menu {
         grid-column: 1 / -1;
         justify-self: center;
+        margin-bottom: 20px;
     }
     
     .header__logo {
@@ -387,6 +387,13 @@ body {
     
     .cover__title {
         font-size: 80px;
+        letter-spacing: 0.25em;
+    }
+    
+    .cover__description {
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .lots, .about {
@@ -411,10 +418,11 @@ body {
     .about {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
     }
     
     .about__logo {
-        justify-self: start;
+        justify-self: center;
     }
     
     .about__title {
@@ -433,4 +441,31 @@ body {
     .footer__social-list {
         justify-self: center;
     }
+    
+    .footer__social-list {
+        gap: 24px;
+    }
+}
+
+.header__links-list {
+    padding-left: 0;
+}
+
+.address {
+    white-space: nowrap;
+}
+
+.cover__description-text {
+    white-space: nowrap;
+}
+
+.lots__look-more-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about__logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
