@@ -18,10 +18,10 @@
           <a class="header__link header__link_active" href="#">главная</a>
         </li>
         <li class="header__links-list-item">
-          <a class="header__link" href="#">посмотреть лоты</a>
+          <a class="header__link" href="#lots">посмотреть лоты</a>
         </li>
         <li class="header__links-list-item">
-          <a class="header__link" href="#">об аукционе</a>
+          <a class="header__link" href="#about">об аукционе</a>
         </li>
       </ul>
     </nav>
@@ -31,8 +31,7 @@
     </a>
 
     <address class="header__address address">
-      <a href="tel:+99995555555">+9 999 555 5555</a>
-      <br>
+      <a href="tel:+99995555555">+9 999 555 5555</a><br>
       <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
       <p>наб. Принсенграхт 263-265, Амстердам</p>
     </address>
@@ -42,9 +41,9 @@
     <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
-        <span class="aligned-text">оно</span>
-        <span class="aligned-text aligned-text_center letter-spacing-extended">тебе</span>
-        <span class="aligned-text aligned-text_right no-letter-spacing">надо</span>
+        <span class="aligned-text">о<span class="letter-spacing-extended">но</span></span>
+        <span class="aligned-text aligned-text_center">теб<span class="no-letter-spacing">е</span></span>
+        <span class="aligned-text aligned-text_right"><span class="no-letter-spacing">н</span>ад<span class="no-letter-spacing">о</span></span>
       </h1>
 
       <div class="cover__description">
@@ -53,36 +52,30 @@
       </div>
     </section>
 
-    <section class="lots">
+    <section class="lots" id="lots">
       <h2 class="lots__heading">Лоты</h2>
       <ul class="lots__card-list">
         <li class="lots__card-list-item">
           <a class="card-link" href="#">
             <article class="card card_type_film">
               <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
-              <p class="card__text">
-                Не просто бросил, а ушёл с первой лекции. Как он снимал кино: камеру он купил, а сценарий нашёл на чердаке.
-              </p>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. А вы бы рискнули поставить на такой фильм?</p>
             </article>
           </a>
         </li>
         <li class="lots__card-list-item">
           <a class="card-link" href="#">
             <article class="card card_type_book">
-              <h3 class="card__title">Книга, где все события происходят в реальном времени</h3>
-              <p class="card__text">
-                Главный герой просыпается, пьёт кофе и идёт на работу. А ты читаешь об этом ровно столько, сколько длится процесс.
-              </p>
+              <h3 class="card__title">Книга, где описан один день</h3>
+              <p class="card__text">Почти тысяча страниц без знаков препинания. Сегодня это считается шедевром, а тогда — провалом.</p>
             </article>
           </a>
         </li>
         <li class="lots__card-list-item">
           <a class="card-link" href="#">
             <article class="card card_type_picture">
-              <h3 class="card__title">Картина, которую повторил ребёнок</h3>
-              <p class="card__text">
-                Он смешал краски и сделал мазок — и это оказалось шедевром. Автору пришлось подписать картину детской рукой.
-              </p>
+              <h3 class="card__title">Картина, которую нарисовал ребёнок</h3>
+              <p class="card__text">На вид — каляки-маляки. На деле — революция в искусстве. Вы бы купили её за миллион?</p>
             </article>
           </a>
         </li>
@@ -90,17 +83,15 @@
       <a class="lots__look-more-link" href="#">посмотреть больше</a>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__logo">
-        <div class="about__logo-image">
-          <img src="logo-white.svg" alt="Белый логотип Оно тебе надо">
-        </div>
+        <img class="about__logo-image" src="logo-white.svg" alt="Логотип Оно тебе надо">
       </div>
       <div class="about__column">
         <h2 class="about__title">Об аукционе</h2>
         <div class="about__text">
-          <p>Этот аукцион — место, где каждая вещь находит того, кто поверит в её ценность.</p>
-          <p>Мы собираем истории, которые не должны быть забыты, и даём шанс новым владельцам продолжить их.</p>
+          <p>Этот аукцион — место, где каждая странная вещь обретает ценителя.</p>
+          <p>Здесь можно найти то, во что не верили ни коллекционеры, ни критики — и именно поэтому оно бесценно.</p>
         </div>
       </div>
     </section>
@@ -108,8 +99,7 @@
 
   <footer class="footer">
     <address class="footer__address address">
-      <a href="tel:+99995555555">+9 999 555 5555</a>
-      <br>
+      <a href="tel:+99995555555">+9 999 555 5555</a><br>
       <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
       <p>наб. Принсенграхт 263-265, Амстердам</p>
     </address>
@@ -120,18 +110,25 @@
           <a class="footer__menu-link footer__menu-link_active" href="#">главная</a>
         </li>
         <li class="footer__menu-list-item">
-          <a class="footer__menu-link" href="#">посмотреть лоты</a>
+          <a class="footer__menu-link" href="#lots">посмотреть лоты</a>
         </li>
         <li class="footer__menu-list-item">
-          <a class="footer__menu-link" href="#">об аукционе</a>
+          <a class="footer__menu-link" href="#about">об аукционе</a>
         </li>
       </ul>
     </nav>
 
-    <div class="footer__contacts">
-      <p class="footer__contacts-address">Мы в соцсетях:</p>
-      <p class="footer__contacts-phone">@onotebenado</p>
-    </div>
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a class="footer__social-link" href="#"><img src="yt.svg" alt="YouTube"></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-link" href="#"><img src="vk.svg" alt="VK"></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-link" href="#"><img src="pinterest.svg" alt="Pinterest"></a>
+      </li>
+    </ul>
   </footer>
 
 </body>
