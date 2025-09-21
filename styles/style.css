@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
 }
 
+/* ===== HEADER ===== */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -21,14 +22,10 @@ body {
   gap: 20px;
 }
 
-.header__menu {
-  justify-self: start;
-}
-
 .header__links-list {
   display: flex;
-  list-style: none;
   gap: 32px;
+  list-style: none;
 }
 
 .header__links-list-item {
@@ -44,13 +41,12 @@ body {
   border: 1px solid #000;
   border-radius: 50%;
   margin-right: 8px;
-  vertical-align: middle;
 }
 
 .header__link {
-  color: #000;
   text-decoration: none;
   text-underline-offset: 4px;
+  color: #000;
 }
 
 .header__link_active {
@@ -62,7 +58,6 @@ body {
 }
 
 .header__logo {
-  display: block;
   justify-self: center;
 }
 
@@ -78,11 +73,6 @@ body {
   line-height: 1.35;
 }
 
-.address {
-  text-underline-offset: 4px;
-  white-space: nowrap;
-}
-
 .address a {
   color: #000;
   text-decoration: underline;
@@ -90,18 +80,16 @@ body {
 
 .address p {
   margin-top: 5px;
-  line-height: 1.35;
 }
 
+/* ===== COVER ===== */
 .cover {
   position: relative;
-  padding: 165px 50px 50px;
-  background-image: url('cover.jpg');
-  background-size: cover;
-  background-position: center;
+  background: url('cover.jpg') center/cover no-repeat;
   color: #fff;
-  margin-bottom: 180px;
+  padding: 165px 50px 50px;
   min-height: 757px;
+  margin-bottom: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,22 +97,18 @@ body {
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
 }
 
 .cover__title {
   position: relative;
-  z-index: 2;
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.15;
   letter-spacing: 0.3em;
+  z-index: 1;
 }
 
 .aligned-text {
@@ -150,38 +134,29 @@ body {
 
 .cover__description {
   position: relative;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-top: auto;
+  z-index: 1;
 }
 
 .cover__description-text {
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 18px;
-  font-weight: 400;
-  line-height: 1.27;
-  white-space: nowrap;
 }
 
 .bet-button {
-  padding: 12px 32px;
-  background: transparent;
   border: 1px solid #fff;
+  background: transparent;
   color: #fff;
+  padding: 12px 32px;
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
 }
 
-.bet-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
+/* ===== LOTS ===== */
 .lots {
   padding: 0 50px;
   margin-bottom: 182px;
@@ -201,22 +176,14 @@ body {
   margin-bottom: 30px;
 }
 
-.lots__card-list-item {
-  flex: 1;
-}
-
-.card-link {
-  text-decoration: none;
-}
-
 .card {
   position: relative;
   min-height: 450px;
   padding: 50px 40px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #fff;
   background-size: cover;
   background-position: center;
 }
@@ -224,12 +191,8 @@ body {
 .card::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
 }
 
 .card_type_film {
@@ -244,44 +207,38 @@ body {
   background-image: url('card-lot-03.jpg');
 }
 
-.card__title {
+.card__title,
+.card__text {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+}
+
+.card__title {
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 3px;
-  line-height: 1.2;
-  font-weight: 700;
 }
 
 .card__text {
-  position: relative;
-  z-index: 2;
   font-size: 20px;
-  line-height: 1.2;
 }
 
 .lots__look-more-link {
   margin-left: 40px;
   font-size: 20px;
-  color: #000;
   text-decoration: underline;
   text-underline-offset: 5px;
+  color: #000;
 }
 
+/* ===== ABOUT ===== */
 .about {
   padding: 0 50px;
   margin-bottom: 180px;
   display: grid;
   grid-template-columns: 430px 1fr;
   gap: 25px;
-}
-
-.about__logo {
-  display: flex;
-  justify-content: center;
-  align-items: start;
 }
 
 .about__logo-image {
@@ -310,19 +267,12 @@ body {
   margin-bottom: 25px;
 }
 
+/* ===== FOOTER ===== */
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: start;
   padding: 180px 50px 90px;
   gap: 20px;
-}
-
-.footer__address {
-  justify-self: start;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.35;
 }
 
 .footer__menu {
@@ -336,9 +286,9 @@ body {
 
 .footer__menu-link {
   font-size: 18px;
+  text-decoration: none;
   color: #000;
   text-underline-offset: 4px;
-  text-decoration: none;
 }
 
 .footer__menu-link_active {
@@ -347,19 +297,4 @@ body {
 
 .footer__menu-link:hover {
   text-decoration: underline;
-}
-
-.footer__contacts {
-  justify-self: end;
-}
-
-.footer__contacts-address {
-  font-size: 18px;
-  line-height: 1.35;
-}
-
-.footer__contacts-phone {
-  margin-top: 16px;
-  font-size: 18px;
-  line-height: 1.35;
 }
