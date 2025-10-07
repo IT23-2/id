@@ -8,6 +8,66 @@
   flex-direction: column;
 }
 
+/* Общие стили для текста */
+.element .text-wrapper,
+.element .text-wrapper-21,
+.element .p,
+.element .text-wrapper-22 {
+  font-family: "Raleway", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24.3px;
+}
+
+.element .text-wrapper,
+.element .text-wrapper-21 {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.element .text-wrapper:hover,
+.element .text-wrapper:focus,
+.element .text-wrapper-21:hover,
+.element .text-wrapper-21:focus {
+  text-decoration: underline;
+}
+
+/* Стили для навигации */
+.element .text-wrapper-2,
+.element .text-wrapper-3,
+.element .text-wrapper-4,
+.element .text-wrapper-18,
+.element .text-wrapper-19,
+.element .text-wrapper-20 {
+  font-family: "Raleway", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  text-decoration: none;
+  display: block;
+}
+
+.element .text-wrapper-2:hover,
+.element .text-wrapper-2:focus,
+.element .text-wrapper-3:hover,
+.element .text-wrapper-3:focus,
+.element .text-wrapper-4:hover,
+.element .text-wrapper-4:focus,
+.element .text-wrapper-18:hover,
+.element .text-wrapper-18:focus,
+.element .text-wrapper-19:hover,
+.element .text-wrapper-19:focus,
+.element .text-wrapper-20:hover,
+.element .text-wrapper-20:focus {
+  text-decoration: underline;
+}
+
+/* Header */
 .element .header {
   width: 1100px;
   height: 293px;
@@ -23,22 +83,35 @@
   height: 98px;
   display: flex;
   flex-direction: column;
+  font-style: normal;
 }
 
-.element .div {
-  margin-left: 0.5px;
+.element .div,
+.element .info-sobaka-ge {
   width: 241.48px;
   height: 24px;
   position: relative;
 }
 
-.element .line {
+.element .div {
+  margin-left: 0.5px;
+}
+
+.element .line,
+.element .img {
   position: absolute;
   top: 23px;
   left: 0;
-  width: 132px;
   height: 1px;
   object-fit: cover;
+}
+
+.element .line {
+  width: 132px;
+}
+
+.element .img {
+  width: 130px;
 }
 
 .element .text-wrapper {
@@ -46,28 +119,6 @@
   top: 0;
   left: 0;
   width: 239px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 24.3px;
-  white-space: nowrap;
-}
-
-.element .info-sobaka-ge {
-  width: 241.48px;
-  height: 24px;
-  position: relative;
-}
-
-.element .img {
-  position: absolute;
-  top: 23px;
-  left: 0;
-  width: 130px;
-  height: 1px;
-  object-fit: cover;
 }
 
 .element .p {
@@ -75,20 +126,21 @@
   width: 236.49px;
   height: 49px;
   margin-top: 1px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 24.3px;
 }
 
-.element .logo {
+/* Логотип как ссылка */
+.element .logo-link {
   position: absolute;
   top: 92px;
   left: calc(50.00% - 72px);
   width: 148px;
   height: 105px;
+  display: block;
+}
+
+.element .logo {
+  width: 100%;
+  height: 100%;
 }
 
 .element .menu {
@@ -103,42 +155,54 @@
 .element .text-wrapper-2 {
   width: 67px;
   height: 21px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+}
+
+.element .view,
+.element .view-2 {
+  height: 22px;
+  position: relative;
 }
 
 .element .view {
   width: 171.48px;
-  height: 22px;
-  position: relative;
   margin-left: 13px;
 }
 
-.element .line-2 {
+.element .view-2 {
+  width: 131.48px;
+  margin-left: 10.5px;
+}
+
+.element .line-2,
+.element .line-3 {
   position: absolute;
   top: 21px;
-  left: 18px;
-  width: 151px;
   height: 1px;
   object-fit: cover;
 }
 
-.element .text-wrapper-3 {
+.element .line-2 {
+  left: 18px;
+  width: 151px;
+}
+
+.element .line-3 {
+  left: 19px;
+  width: 110px;
+}
+
+.element .text-wrapper-3,
+.element .text-wrapper-4 {
   position: absolute;
   top: 0;
+}
+
+.element .text-wrapper-3 {
   left: 18px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+}
+
+.element .text-wrapper-4 {
+  left: 19px;
 }
 
 .element .list-marker {
@@ -152,35 +216,7 @@
   border-color: #000000;
 }
 
-.element .view-2 {
-  width: 131.48px;
-  height: 22px;
-  position: relative;
-  margin-left: 10.5px;
-}
-
-.element .line-3 {
-  position: absolute;
-  top: 21px;
-  left: 19px;
-  width: 110px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.element .text-wrapper-4 {
-  position: absolute;
-  top: 0;
-  left: 19px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
+/* Cover section */
 .element .cover {
   width: 1100px;
   height: 757px;
@@ -237,12 +273,26 @@
   letter-spacing: 5.32px;
 }
 
+/* Button */
 .element .button {
   all: unset;
   box-sizing: border-box;
   width: 258px;
   height: 51px;
   position: relative;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.element .button:hover .rectangle,
+.element .button:focus .rectangle {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.element .button:active .rectangle {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .element .rectangle {
@@ -253,6 +303,7 @@
   height: 51px;
   border: 1px solid;
   border-color: #ffffff;
+  pointer-events: none;
 }
 
 .element .text-wrapper-8 {
@@ -267,6 +318,7 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  pointer-events: none;
 }
 
 .element .title {
@@ -280,9 +332,9 @@
   gap: 20px;
 }
 
-.element .text-wrapper-9 {
-  width: 286px;
-  height: 115px;
+.element .text-wrapper-9,
+.element .text-wrapper-10,
+.element .text-wrapper-11 {
   font-family: "Raleway", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -290,37 +342,27 @@
   letter-spacing: 30.00px;
   line-height: 115.0px;
   white-space: nowrap;
+  height: 115px;
+}
+
+.element .text-wrapper-9 {
+  width: 286px;
 }
 
 .element .text-wrapper-10 {
   margin-left: -6px;
-  height: 115px;
   width: 339px;
   align-self: center;
-  font-family: "Raleway", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 100px;
   text-align: center;
-  letter-spacing: 30.00px;
-  line-height: 115.0px;
-  white-space: nowrap;
 }
 
 .element .text-wrapper-11 {
   margin-left: 613px;
   width: 387px;
-  height: 115px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 100px;
   text-align: right;
-  letter-spacing: 30.00px;
-  line-height: 115.0px;
-  white-space: nowrap;
 }
 
+/* Lots section */
 .element .lots {
   margin-left: 24px;
   width: 1052px;
@@ -329,43 +371,39 @@
   margin-top: 181px;
 }
 
-.element .more {
+.element .title-2 {
   position: absolute;
+  top: 0;
   left: 40px;
-  bottom: -2px;
-  width: 194px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.element .text-wrapper-12 {
-  width: 192px;
-  height: 23px;
   font-family: "Raleway", Helvetica;
-  font-weight: 400;
+  font-weight: 700;
   color: #000000;
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.element .line-4 {
-  width: 191px;
-  margin-bottom: 1px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.element .frame {
-  left: 718px;
+.element .frame,
+.element .lot-wrapper,
+.element .div-wrapper {
   position: absolute;
   top: 74px;
   width: 334px;
   height: 596px;
   display: flex;
+}
+
+.element .frame {
+  left: 718px;
+}
+
+.element .lot-wrapper {
+  left: 359px;
+}
+
+.element .div-wrapper {
+  left: 0;
 }
 
 .element .lot {
@@ -374,12 +412,16 @@
   position: relative;
 }
 
-.element .photo {
+.element .photo,
+.element .photo-2 {
   position: absolute;
   width: 98.82%;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.element .photo {
   object-fit: cover;
 }
 
@@ -410,54 +452,54 @@
   width: calc(100% - 84px);
   top: 48px;
   left: 40px;
+  font-family: "Raleway", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 22px;
   line-height: 26.4px;
   text-decoration: underline;
-  font-family: "Raleway", Helvetica;
   letter-spacing: 0;
 }
 
-.element .lot-wrapper {
-  left: 359px;
+/* More link */
+.element .more {
   position: absolute;
-  top: 74px;
-  width: 334px;
-  height: 596px;
-  display: flex;
-}
-
-.element .photo-2 {
-  position: absolute;
-  width: 98.82%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.element .div-wrapper {
-  left: 0;
-  position: absolute;
-  top: 74px;
-  width: 334px;
-  height: 596px;
-  display: flex;
-}
-
-.element .title-2 {
-  position: absolute;
-  top: 0;
   left: 40px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 700;
+  bottom: -2px;
+  width: 194px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
   color: #000000;
-  font-size: 40px;
+}
+
+.element .more:hover,
+.element .more:focus {
+  opacity: 0.8;
+}
+
+.element .text-wrapper-12 {
+  width: 192px;
+  height: 23px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
+.element .line-4 {
+  width: 191px;
+  margin-bottom: 1px;
+  height: 1px;
+  object-fit: cover;
+}
+
+/* About section */
 .element .about {
   margin-left: 24px;
   width: 1052px;
@@ -504,126 +546,33 @@
   gap: 24px;
 }
 
-.element .text-wrapper-16 {
-  width: 688px;
-  height: 120px;
+.element .text-wrapper-16,
+.element .text-wrapper-17 {
   font-family: "Raleway", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
   letter-spacing: 0;
   line-height: 24px;
+}
+
+.element .text-wrapper-16 {
+  width: 688px;
+  height: 120px;
 }
 
 .element .text-wrapper-17 {
   width: 693px;
   height: 168px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: 24px;
 }
 
+/* Footer */
 .element .footer {
   width: 1100px;
   height: 161px;
   position: relative;
   margin-top: 205px;
   background-color: transparent;
-}
-
-.element .socials {
-  position: absolute;
-  top: 1px;
-  right: 50px;
-  width: 240px;
-  height: 48px;
-}
-
-.element .menu-2 {
-  position: absolute;
-  top: 1px;
-  left: calc(50.00% - 81px);
-  width: 166px;
-  height: 64px;
-}
-
-.element .view-3 {
-  position: absolute;
-  top: 42px;
-  left: calc(50.00% - 61px);
-  width: 121px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.element .text-wrapper-18 {
-  margin-left: -2.0px;
-  height: 21px;
-  width: 118.8px;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  line-height: normal;
-  font-family: "Raleway", Helvetica;
-  letter-spacing: 0;
-}
-
-.element .line-5 {
-  margin-left: -1.8px;
-  width: 107px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.element .view-4 {
-  position: absolute;
-  top: 21px;
-  left: calc(50.00% - 83px);
-  width: 166px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.element .text-wrapper-19 {
-  margin-left: -2px;
-  height: 21px;
-  width: 163.9px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.element .line-6 {
-  margin-left: -1.9px;
-  width: 146px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.element .text-wrapper-20 {
-  position: absolute;
-  top: 0;
-  left: calc(50.00% - 38px);
-  width: 74px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
 .element .contacts-2 {
@@ -634,14 +583,19 @@
   height: 98px;
   display: flex;
   flex-direction: column;
+  font-style: normal;
 }
 
-.element .div-2 {
-  margin-left: 0.6px;
+.element .div-2,
+.element .info-sobaka-ge-2 {
   width: 266px;
   height: 24px;
   position: relative;
   margin-top: 0;
+}
+
+.element .div-2 {
+  margin-left: 0.6px;
 }
 
 .element .line-7 {
@@ -658,20 +612,6 @@
   top: 0;
   left: 0;
   width: 264px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 24.3px;
-  white-space: nowrap;
-}
-
-.element .info-sobaka-ge-2 {
-  width: 266px;
-  height: 24px;
-  position: relative;
-  margin-top: 0;
 }
 
 .element .text-wrapper-22 {
@@ -679,95 +619,79 @@
   width: 260.7px;
   height: 49px;
   margin-top: 1px;
-  font-family: "Raleway", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 24.3px;
-}
-/* Original CSS code should be injected here */
-
-.element .text-wrapper,
-.element .text-wrapper-21 {
-  color: #000000;
-  text-decoration: none;
 }
 
-.element .text-wrapper:hover,
-.element .text-wrapper:focus,
-.element .text-wrapper-21:hover,
-.element .text-wrapper-21:focus {
-  text-decoration: underline;
+.element .menu-2 {
+  position: absolute;
+  top: 1px;
+  left: calc(50.00% - 81px);
+  width: 166px;
+  height: 64px;
 }
 
-.element .text-wrapper-2,
-.element .text-wrapper-3,
-.element .text-wrapper-4,
-.element .text-wrapper-18,
-.element .text-wrapper-19,
-.element .text-wrapper-20 {
-  color: #000000;
-  text-decoration: none;
-  display: block;
-}
-
-.element .text-wrapper-2:hover,
-.element .text-wrapper-2:focus,
-.element .text-wrapper-3:hover,
-.element .text-wrapper-3:focus,
-.element .text-wrapper-4:hover,
-.element .text-wrapper-4:focus,
-.element .text-wrapper-18:hover,
-.element .text-wrapper-18:focus,
-.element .text-wrapper-19:hover,
-.element .text-wrapper-19:focus,
-.element .text-wrapper-20:hover,
-.element .text-wrapper-20:focus {
-  text-decoration: underline;
-}
-
-.element .button {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-.element .button:hover .rectangle,
-.element .button:focus .rectangle {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.element .button:active .rectangle {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.element .more {
-  text-decoration: none;
-  color: #000000;
+.element .view-3,
+.element .view-4 {
+  position: absolute;
+  height: 22px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
 }
 
-.element .more:hover,
-.element .more:focus {
-  opacity: 0.8;
+.element .view-4 {
+  top: 21px;
+  left: calc(50.00% - 83px);
+  width: 166px;
 }
 
-.element .contacts {
-  font-style: normal;
+.element .view-3 {
+  top: 42px;
+  left: calc(50.00% - 61px);
+  width: 121px;
 }
 
-.element .contacts-2 {
-  font-style: normal;
+.element .text-wrapper-19 {
+  margin-left: -2px;
+  height: 21px;
+  width: 163.9px;
+  text-align: center;
 }
 
-.element .rectangle {
-  pointer-events: none;
+.element .text-wrapper-18 {
+  margin-left: -2.0px;
+  height: 21px;
+  width: 118.8px;
+  text-align: center;
 }
 
-.element .text-wrapper-8 {
-  pointer-events: none;
+.element .line-6,
+.element .line-5 {
+  height: 1px;
+  object-fit: cover;
+}
+
+.element .line-6 {
+  margin-left: -1.9px;
+  width: 146px;
+}
+
+.element .line-5 {
+  margin-left: -1.8px;
+  width: 107px;
+}
+
+.element .text-wrapper-20 {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 38px);
+  width: 74px;
+  text-align: center;
+}
+
+.element .socials {
+  position: absolute;
+  top: 1px;
+  right: 50px;
+  width: 240px;
+  height: 48px;
 }
